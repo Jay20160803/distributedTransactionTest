@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.andy.mapper.ds1.Order1Dao" >
+
+    <insert id="insert" parameterType="com.andy.model.Order">
+        insert into t_order_1 (id,`name`,`type`) VALUE
+        (#{id},#{name},#{type})
+    </insert>
+
+</mapper>
